@@ -11,9 +11,18 @@
     src: url('/assets/fonts/french.ttf') format("truetype");
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background:black;
     color:gray;
+}
+
+.site-header .wrapper {
+    max-width:unset !important;
 }
 
 .site-header {
@@ -21,20 +30,26 @@ body {
 }
 .site-title {
     color:red !important;
-    font-size:200px;
+    font-size:15vw;
     font-family:"CreepyInk", sans-serif;
     width:100vw;
-    padding:85px;
+    padding:100px 10%;
 }
 
-.page-content .wrapper {
-    margin:0 150px;
-}
 h1, h3, h3 a{
     color:gray !important;
     font-size:135px !important;
     font-family:"CreepyInk", sans-serif;
     line-height:.8;
+}
+
+.site-nav {
+    float:right;
+}
+
+.site-nav a {
+    color:gray !important;
+    font-family:"Sears Tower", serif;
 }
 
 a:hover {
